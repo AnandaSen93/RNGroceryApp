@@ -1,8 +1,9 @@
 import ApiClient from '../../ApiClient/ApiClient';
+import apiConstant from '../../ApiClient/ApiConstant';
 
 class AuthService {
   async login(email, password) {
-    const response = await ApiClient.post('/login', {
+    const response = await ApiClient.post(apiConstant.LOGIN, {
       email,
       password,
     });

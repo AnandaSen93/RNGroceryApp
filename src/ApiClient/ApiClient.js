@@ -1,9 +1,16 @@
 import axios from 'axios';
+import apiConstant from './ApiConstant'
+
+
 
 class ApiClient {
+
+
   constructor() {
     this.client = axios.create({
-      baseURL: 'https://api.example.com/',
+      baseURL: apiConstant.IS_PRODUCTION
+        ? apiConstant.LIVE_BASE_URL
+        : apiConstant.DEV_BASE_URL,
       timeout: 30000,
       headers: {
         Accept: 'application/json',
@@ -13,6 +20,7 @@ class ApiClient {
 
     this.initializeInterceptors();
   }
+
 
   initializeInterceptors() {
     this.client.interceptors.request.use(
