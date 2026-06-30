@@ -14,7 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const Tab = createBottomTabNavigator();
 
 // check commit
-
+// changes for home
 
 const BotomScreen = () => {
     return (
