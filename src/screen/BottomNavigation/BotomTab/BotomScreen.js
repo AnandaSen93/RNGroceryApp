@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator();
 
 const BotomScreen = () => {
     return (
-
+        <SafeAreaView style={{ flex: 1 }} edges={['bottom','top']}>
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
@@ -140,6 +140,7 @@ const BotomScreen = () => {
                 }}
             />
         </Tab.Navigator>
+        </SafeAreaView>
 
     );
 };
