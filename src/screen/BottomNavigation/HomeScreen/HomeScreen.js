@@ -168,10 +168,10 @@ const HomeScreen = () => {
                                 justifyContent: 'space-between',
                                 alignItems: 'center',
                                 margin: 5,
-                                padding:5
+                                padding:15
                             }}>
                             <Image
-                                source={require('../../../assets/images/filter.png')}
+                                source={require('../../../assets/images/productImage.png')}
                                 style={{
                                     height:'60%',
                                     width:'80%'
@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
     },
 
     iconStyle: { width: 20, height: 20 },
-    headingStyle: {
+           headingStyle: {
         marginVertical: 10,
 
     },
